@@ -12,9 +12,10 @@ Install Scala and sbt
 
 ## Test case ##
 Acceptance test of for fetching a single video from Klaras REST API:   
-Given there is a video added to ElasticSearch with id 'dn.screen9.1uwHxJLDuuBKBHGHQcissw'  
-When fetching a video with id 'dn.screen9.1uwHxJLDuuBKBHGHQcissw'  
-Then response should contain the right json body  
+ 
+<b>Given</b> there is a video added to ElasticSearch with id 'dn.screen9.1uwHxJLDuuBKBHGHQcissw'  
+<b>When</b> fetching a video with id 'dn.screen9.1uwHxJLDuuBKBHGHQcissw'  
+<b>Then</b> response should contain the right json body  
 
 ```json
 {
