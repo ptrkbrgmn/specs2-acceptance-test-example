@@ -11,8 +11,10 @@ http://sttp.readthedocs.io/en/latest/index.html
 Install Scala and sbt
 
 ## Test case ##
-Given there is a video added to ElasticSearch with id 'dn.screen9.1uwHxJLDuuBKBHGHQcissw'  
+Given there is a video added to ElasticSearch with id 'dn.screen9.1uwHxJLDuuBKBHGHQcissw'
+    
 When fetching a video with id 'dn.screen9.1uwHxJLDuuBKBHGHQcissw' using Klaras REST API  
+  
 Then response should contain the right json data  
 
 ```json
