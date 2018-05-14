@@ -1,4 +1,4 @@
-# specs2 example
+# specs2 acceptance test example
 
 ### Resources
 specs2  
