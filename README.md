@@ -88,7 +88,7 @@ Right click on test an choose run
 + Can be run by IntelliJ
 + \<Click to se difference> in IntelliJ works
 + Seems pretty fast
- 
+
 ### Cons
 - For some types of test conditions are specified twice, both in text and in method, i.e you can have the right condition in the text but the wrong ine int the method doing the actual check.  
   This might be fixed using StandardDelimitedStepParsers 
@@ -96,3 +96,4 @@ Right click on test an choose run
 - Not very intuitive (at least not for a Scala newbie). A lot of magic.
 - Not as nice output as ScalaTest
 - How pass result from Given to THen? Variables in Given is not in scope in Then
+- Not as good documentation as ScalaTest
