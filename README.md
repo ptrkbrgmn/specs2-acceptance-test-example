@@ -52,6 +52,38 @@ sbt> testOnly example.NavaKlaraVideo
 ## Run test with IntelliJ ##
 Right click on test an choose run
 
+## Test Success Output
+```sh
+[info] Given there is a video added to elasticsearch with id dn.screen9.1uwHxJLDuuBKBHGHQcissw
+[info] When fetching a video with id dn.screen9.1uwHxJLDuuBKBHGHQcissw
+[info] + Then response should contain the right data
+[info] Fetch a single video
+[info] Total for specification NavaKlaraVideo
+[info] Finished in 499 ms
+[info] 1 example, 4 expectations, 0 failure, 0 error
+[info] Passed: Total 1, Failed 0, Errors 0, Passed 1
+[success] Total time: 8 s, completed May 15, 2018 10:02:55 AM
+```
+
+## Test Failure Output
+```sh
+[info] Given there is a video added to elasticsearch with id dn.screen9.1uwHxJLDuuBKBHGHQcissw
+[info] When fetching a video with id dn.screen9.1uwHxJLDuuBKBHGHQcissw
+[error] x Then response should contain the right data
+..
+[error] ...ished[xx]"
+[error] }
+[info] Fetch a single video
+[info] Total for specification NavaKlaraVideo
+[info] Finished in 457 ms
+[info] 1 example, 4 expectations, 1 failure, 0 error
+[error] Failed: Total 1, Failed 1, Errors 0, Passed 0
+[error] Failed tests:
+[error] 	example.NavaKlaraVideo
+[error] (Test / test) sbt.TestsFailedException: Tests unsuccessful
+[error] Total time: 2 s, completed May 15, 2018 10:10:50 AM
+```
+
 ### Pros
 + Can be run by IntelliJ
 + \<Click to se difference> in IntelliJ works
@@ -62,4 +94,5 @@ Right click on test an choose run
   This might be fixed using StandardDelimitedStepParsers 
 - Error messages could be more informative
 - Not very intuitive (at least not for a Scala newbie). A lot of magic.
+- Not as nice output as ScalaTest
 - How pass result from Given to THen? Variables in Given is not in scope in Then
